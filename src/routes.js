@@ -1,11 +1,13 @@
 import React from "react";
-import { Routes } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import About from "./pages/About.jsx";
+import Home from "./pages/Home.jsx";
 
 const FileRoute = () => {
   return (
     <Routes>
-      {/* Routes */}
-      {/* Routes */}
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
       {/* Routes */}
     </Routes>
   );

@@ -1,0 +1,33 @@
+@import "../sass/styles/mixins.scss";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  nav {
+    display: flex;
+    gap: 16px;
+
+    .navbar-link {
+      @include headerFont();
+      text-decoration: none;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        height: 0;
+        width: 100%;
+        background-color: $primary-color;
+        transition: height 0.3s;
+      }
+    }
+  }
+}
+
+.active.navbar-link::after {
+  height: 1px;
+}
