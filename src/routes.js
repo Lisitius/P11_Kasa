@@ -1,14 +1,14 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Routes } from "react-router-dom";
 
-const Routes = () => {
+const FileRoute = () => {
   return (
-    <Switch>
+    <Routes>
       {/* Routes */}
       {/* Routes */}
       {/* Routes */}
-    </Switch>
+    </Routes>
   );
 };
 
-export default Routes;
+export default FileRoute;
