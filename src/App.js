@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import Routes from "./routes";
+import FileRoute from "./routes";
 import "./App.scss";
 
 const App = () => {
@@ -8,7 +8,7 @@ const App = () => {
     <BrowserRouter>
       <div className="App">
         {/* Autre composant */}
-        <Routes />
+        <FileRoute />
         {/* Autre composant */}
       </div>
     </BrowserRouter>
