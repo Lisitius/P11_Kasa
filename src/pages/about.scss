@@ -1,0 +1,22 @@
+.banner-about {
+  width: 1240px;
+  height: 223px;
+  background-image: url("../assets/banner-about.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  margin: 0 auto;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.241);
+    border-radius: 16px;
+    margin: 0 auto;
+  }
+}

@@ -14,3 +14,10 @@
   font-weight: 500;
   color: $white-color;
 }
+
+@mixin aboutFont {
+  font-size: 24px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  color: $primary-color;
+}

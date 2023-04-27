@@ -1,0 +1,38 @@
+@import "../../sass/styles/mixins.scss";
+@import "../../sass/styles/variables.scss";
+
+.dropdown {
+  width: 1023px;
+  margin: 0 auto;
+  margin-top: 31px;
+
+  .dropdown-header {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    height: 47px;
+    background-color: $primary-color;
+    color: $white-color;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    cursor: pointer;
+    position: relative;
+    padding-left: 20px;
+  }
+
+  .arrow {
+    position: absolute;
+    right: 10px;
+    font-size: 24px; // Ajustez la taille de l'icône ici
+    transition: transform 0.3s;
+  }
+
+  .dropdown-content {
+    margin-top: 17px;
+    background-color: white;
+    padding: 10px;
+    @include aboutFont();
+    line-height: 34px;
+  }
+}
