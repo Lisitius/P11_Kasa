@@ -8,3 +8,9 @@
   line-height: 34, 22px;
   color: $primary-color;
 }
+
+@mixin whiteFont {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  color: $white-color;
+}

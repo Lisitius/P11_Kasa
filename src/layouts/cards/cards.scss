@@ -1,0 +1,42 @@
+@import "../../sass/styles/mixins.scss";
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-gap: 16px;
+  a {
+    color: #d9d9d9;
+    text-decoration: none;
+  }
+}
+
+.card {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  margin: 10px;
+  height: 340px;
+  border-radius: 10px;
+  background-position: center;
+  h2 {
+    @include whiteFont();
+    width: 150px;
+    font-size: 18px;
+    z-index: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin: 10px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.241);
+    border-radius: 16px;
+    margin: 0 auto;
+  }
+}
