@@ -1,11 +1,5 @@
-import Header from "../layouts/Header";
-
 const About = () => {
-  return (
-    <div>
-      <Header />
-    </div>
-  );
+  return <div></div>;
 };
 
 export default About;

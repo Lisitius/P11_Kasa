@@ -1,9 +1,10 @@
-@import "../sass/styles/mixins.scss";
+@import "../../sass/styles/mixins.scss";
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 40px 100px;
 
   nav {
     display: flex;

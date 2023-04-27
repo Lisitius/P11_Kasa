@@ -1,4 +1,6 @@
 import React from "react";
+import Header from "./layouts/header/Header";
+import Footer from "./layouts/footer/Footer";
 import { BrowserRouter } from "react-router-dom";
 import FileRoute from "./routes";
 import "./App.scss";
@@ -7,9 +9,9 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="App">
-        {/* Autre composant */}
+        <Header />
         <FileRoute />
-        {/* Autre composant */}
+        <Footer />
       </div>
     </BrowserRouter>
   );

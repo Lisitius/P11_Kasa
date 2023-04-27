@@ -1,10 +1,10 @@
-import Header from "../layouts/Header";
+import Banner from "../layouts/banner/Banner";
 import "./Home.scss";
 
 const Home = () => {
   return (
     <div className="home-container">
-      <Header />
+      <Banner />
     </div>
   );
 };
