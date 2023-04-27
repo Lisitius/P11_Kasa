@@ -1,3 +1,5 @@
+@import "../../sass/styles/mixins.scss";
+
 .banner {
   width: 1240px;
   height: 223px;
@@ -23,8 +25,7 @@
 
 .banner-text {
   z-index: 1;
-  color: #ffffff;
   font-size: 48px;
   text-align: center;
-  font-weight: 500;
+  @include whiteFont();
 }

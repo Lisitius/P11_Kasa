@@ -1,11 +1,16 @@
 import Banner from "../layouts/banner/Banner";
-import "./Home.scss";
+import Cards from "../layouts/cards/cards";
+import "./home.scss";
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <section className="home-container">
       <Banner />
-    </div>
+
+      <div className="card-container">
+        <Cards />
+      </div>
+    </section>
   );
 };
 
