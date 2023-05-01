@@ -10,15 +10,15 @@ const Dropdown = ({ title, text }) => {
 
   return (
     <div className="dropdown">
-      <div className="dropdown-header" onClick={toggleDropdown}>
+      <div className="dropdown__header" onClick={toggleDropdown}>
         {title}
         <i
-          className={`fas arrow ${
+          className={`fas dropdown__arrow ${
             isOpen ? "fa-solid fa-chevron-up" : "fa-solid fa-chevron-down"
           }`}
         ></i>
       </div>
-      {isOpen && <div className="dropdown-content">{text}</div>}
+      {isOpen && <div className="dropdown__content">{text}</div>}
     </div>
   );
 };
