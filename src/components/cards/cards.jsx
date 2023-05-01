@@ -6,7 +6,7 @@ const Cards = () => {
   return (
     <div className="cards">
       {logement.map((location) => (
-        <Link to={`/location/}`}>
+        <Link to={`/location/${location.id}`} key={location.id}>
           <div
             className="card"
             style={{ backgroundImage: `url(${location.cover})` }}
