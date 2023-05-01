@@ -6,7 +6,7 @@
   margin: 0 auto;
   margin-top: 31px;
 
-  .dropdown-header {
+  &__header {
     font-family: Montserrat, sans-serif;
     font-weight: 500;
     font-size: 24px;
@@ -21,14 +21,14 @@
     padding-left: 20px;
   }
 
-  .arrow {
+  &__arrow {
     position: absolute;
     right: 10px;
     font-size: 24px; // Ajustez la taille de l'icône ici
     transition: transform 0.3s;
   }
 
-  .dropdown-content {
+  &__content {
     margin-top: 17px;
     background-color: white;
     padding: 10px;

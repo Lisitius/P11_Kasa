@@ -1,5 +1,5 @@
-import Banner from "../components/banner/Banner";
-import Cards from "../components/cards/cards";
+import Banner from "../../components/banner/Banner";
+import Cards from "../../components/cards/cards";
 import "./home.scss";
 
 const Home = () => {

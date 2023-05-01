@@ -1,4 +1,4 @@
-import Dropdown from "../components/dropdown/Dropdown";
+import Dropdown from "../../components/dropdown/Dropdown";
 import "./about.scss";
 
 const About = () => {

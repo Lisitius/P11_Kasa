@@ -8,7 +8,7 @@ const Cards = () => {
       {logement.map((location) => (
         <Link to={`/location/${location.id}`} key={location.id}>
           <div
-            className="card"
+            className="cards__card"
             style={{ backgroundImage: `url(${location.cover})` }}
           >
             <h2>{location.title}</h2>
