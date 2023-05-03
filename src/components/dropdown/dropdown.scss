@@ -34,5 +34,12 @@
     padding: 10px;
     @include aboutFont();
     line-height: 34px;
+    ul {
+      list-style: none;
+      margin: 0;
+      li {
+        margin: 0 0 8px 0;
+      }
+    }
   }
 }
