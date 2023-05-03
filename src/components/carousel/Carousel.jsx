@@ -15,24 +15,26 @@ const Carousel = ({ pictures }) => {
   };
 
   return (
-    <div className="carousel">
-      {pictures.length > 1 && (
-        <i
-          className="fa-solid fa-chevron-left fa-6x carousel__arrow carousel__arrow--left"
-          onClick={prevSlide}
-        ></i>
-      )}
-      <img
-        className="carousel__image"
-        src={pictures[currentIndex]}
-        alt="Carousel"
-      />
-      {pictures.length > 1 && (
-        <i
-          className="fa-solid fa-chevron-right fa-6x carousel__arrow carousel__arrow--right"
-          onClick={nextSlide}
-        ></i>
-      )}
+    <div className="carousel-container">
+      <div className="carousel">
+        {pictures.length > 1 && (
+          <i
+            className="fa-solid fa-chevron-left fa-6x carousel__arrow carousel__arrow--left"
+            onClick={prevSlide}
+          ></i>
+        )}
+        <img
+          className="carousel__image"
+          src={pictures[currentIndex]}
+          alt="Carousel"
+        />
+        {pictures.length > 1 && (
+          <i
+            className="fa-solid fa-chevron-right fa-6x carousel__arrow carousel__arrow--right"
+            onClick={nextSlide}
+          ></i>
+        )}
+      </div>
     </div>
   );
 };
