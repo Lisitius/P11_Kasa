@@ -1,14 +1,12 @@
 @import "../../sass/styles/mixins.scss";
 
 .banner {
-  width: 1440px;
+  width: 1640px;
   height: 223px;
   background-image: url("../../assets/home_banner.png");
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexjc(center, center);
   border-radius: 25px;
   margin: 0 auto;
   position: relative;

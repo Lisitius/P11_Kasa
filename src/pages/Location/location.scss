@@ -17,20 +17,15 @@
   }
 
   &__left {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 16px;
+    @include flexdirjc(space-between, column);
 
     &-title {
-      font-size: 32px;
-      font-weight: 500;
+      @include primaryFont(32px, 500);
       margin: 0;
     }
 
     &-loc {
-      font-size: 18px;
-      font-weight: 500;
+      @include primaryFont(18px, 500);
       margin: 0;
     }
 
@@ -41,32 +36,30 @@
       color: $primary-color;
       &-tag {
         display: flex;
-        flex-wrap: wrap;
-        gap: 6px;
+        gap: 10px;
         span {
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          font-size: 14px;
+          @include flexjc(center, center);
           text-align: center;
           width: fit-content;
-          height: 16px;
+          height: 25px;
           background-color: $primary-color;
           color: #fff;
-          border-radius: 26px;
-          padding: 8px 18px;
+          border-radius: 10px;
+          padding: 1px 40px;
         }
       }
     }
   }
 
   &__right {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    @include flex(column, center);
+
     > div {
       display: flex;
       align-items: center;
-      margin-bottom: 12px;
+      margin-bottom: 20px;
+      margin-left: auto;
     }
 
     p:first-child {

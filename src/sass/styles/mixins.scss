@@ -1,6 +1,7 @@
 @import "../styles/variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+//FONT
 @mixin headerFont {
   font-family: Montserrat, sans-serif;
   font-size: 24px;
@@ -20,4 +21,30 @@
   font-family: Montserrat, sans-serif;
   font-weight: 400;
   color: $primary-color;
+}
+
+@mixin primaryFont($size, $weight) {
+  font-family: Montserrat, sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $primary-color;
+}
+
+// FLEX
+@mixin flex($direction, $items) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $items;
+}
+
+@mixin flexjc($jcc, $items) {
+  display: flex;
+  justify-content: $jcc;
+  align-items: $items;
+}
+
+@mixin flexdirjc($jc, $dir) {
+  display: flex;
+  justify-content: $jc;
+  flex-direction: $dir;
 }

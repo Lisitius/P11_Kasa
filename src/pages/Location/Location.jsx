@@ -4,13 +4,14 @@ import Carousel from "../../components/carousel/Carousel";
 import Dropdown from "../../components/dropdown/Dropdown";
 import { useParams } from "react-router-dom";
 import "./location.scss";
+import Error404 from "../404/404";
 
 const Location = () => {
   const { id } = useParams();
   const location = logement.find((location) => location.id === id);
 
   if (!location) {
-    return <div>Error 404</div>;
+    return <Error404 />;
   }
 
   const maxRate = 5;

@@ -7,24 +7,21 @@
   margin-top: 31px;
 
   &__header {
-    font-family: Montserrat, sans-serif;
-    font-weight: 500;
-    font-size: 24px;
+    @include primaryFont(18px, 500);
     height: 47px;
     background-color: $primary-color;
     color: $white-color;
-    display: flex;
-    align-items: center;
-    justify-content: left;
+    @include flexjc(left, center);
     cursor: pointer;
     position: relative;
     padding-left: 20px;
+    border-radius: 10px;
   }
 
   &__arrow {
     position: absolute;
     right: 10px;
-    font-size: 24px; // Ajustez la taille de l'icône ici
+    font-size: 24px;
     transition: transform 0.3s;
   }
 
@@ -33,13 +30,6 @@
     background-color: white;
     padding: 10px;
     @include aboutFont();
-    line-height: 34px;
-    ul {
-      list-style: none;
-      margin: 0;
-      li {
-        margin: 0 0 8px 0;
-      }
-    }
+    line-height: 28px;
   }
 }
