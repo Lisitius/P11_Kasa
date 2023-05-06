@@ -1,0 +1,15 @@
+//pages
+@import "../pages/404/404";
+@import "../pages/About/about";
+@import "../pages/Home/home";
+@import "../pages/Location/location";
+//layouts
+@import "../layouts/footer/footer";
+@import "../layouts/header/header";
+//components
+@import "../components/banner/banner";
+@import "../components/cards/cards";
+@import "../components/carousel/carousel";
+@import "../components/dropdown/dropdown";
+//responsive
+@import "./media";

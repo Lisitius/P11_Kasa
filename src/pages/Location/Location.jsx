@@ -3,7 +3,7 @@ import logement from "../../data/housing.json";
 import Carousel from "../../components/carousel/Carousel";
 import Dropdown from "../../components/dropdown/Dropdown";
 import { useParams } from "react-router-dom";
-import "./location.scss";
+import "./_location.scss";
 import Error404 from "../404/404";
 
 const Location = () => {

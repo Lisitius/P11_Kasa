@@ -6,3 +6,9 @@
   margin: 50px 150px 50px 150px;
   width: 0 auto;
 }
+
+@media (max-width: 500px) {
+  .card-container {
+    margin: 20px;
+  }
+}

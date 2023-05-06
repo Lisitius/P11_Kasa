@@ -1,4 +1,4 @@
-import "./dropdown.scss";
+import "./_dropdown.scss";
 import React, { useState } from "react";
 
 const Dropdown = ({ title, text }) => {

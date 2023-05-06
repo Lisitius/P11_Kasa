@@ -1,4 +1,4 @@
-import "./cards.scss";
+import "./_cards.scss";
 import logement from "../../data/housing.json";
 import { Link } from "react-router-dom";
 
