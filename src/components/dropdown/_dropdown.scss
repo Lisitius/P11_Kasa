@@ -36,6 +36,12 @@
 
 @media (max-width: 500px) {
   .dropdown {
+    width: 335px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    &__header {
+      height: 29px;
+    }
     &__content {
       margin-top: 5px;
       padding: 5px 10px;
