@@ -23,3 +23,16 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  .error-container {
+    h1 {
+      @include primaryFont(96px, 700);
+      margin-top: 190px;
+    }
+    p {
+      font-size: 18px;
+      width: 200px;
+    }
+  }
+}
