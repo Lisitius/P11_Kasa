@@ -70,6 +70,11 @@
   width: 0 auto;
 }
 
+@media (max-width: 500px) {
+  .card-container {
+    margin: 20px;
+  }
+}
 .content {
   display: flex;
   justify-content: space-between;
@@ -218,6 +223,30 @@ header nav .navbar-link::after {
   height: 1px;
 }
 
+@media (max-width: 800px) {
+  header {
+    margin: 20px;
+  }
+  header img {
+    width: 180px;
+    height: 60px;
+  }
+  header nav .navbar-link {
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    margin: 20px;
+  }
+  header img {
+    width: 145px;
+    height: 47px;
+  }
+  header nav .navbar-link {
+    font-size: 12px;
+  }
+}
 .banner {
   width: 1640px;
   height: 223px;
@@ -250,6 +279,37 @@ header nav .navbar-link::after {
   color: #ffffff;
 }
 
+@media (max-width: 1450px) {
+  .banner {
+    width: 1000px;
+    height: 223px;
+  }
+}
+@media (max-width: 1000px) {
+  .banner {
+    width: 700px;
+    height: 180px;
+  }
+  .banner .banner-text {
+    font-size: 35px;
+  }
+}
+@media (max-width: 500px) {
+  .banner {
+    width: 335px;
+    height: 111px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .banner .banner-text {
+    font-size: 24px;
+    text-align: left;
+    margin-left: 16px;
+    width: 200px;
+    height: 48px;
+  }
+}
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -295,6 +355,12 @@ header nav .navbar-link::after {
   margin: 0 auto;
 }
 
+@media (max-width: 500px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .carousel-container {
   display: flex;
   justify-content: center;
