@@ -33,3 +33,13 @@
     line-height: 28px;
   }
 }
+
+@media (max-width: 500px) {
+  .dropdown {
+    &__content {
+      margin-top: 5px;
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+  }
+}

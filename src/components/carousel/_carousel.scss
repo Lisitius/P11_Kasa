@@ -40,3 +40,18 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  .carousel-container {
+    min-height: 0;
+  }
+
+  .carousel {
+    width: 335px;
+    height: 255px;
+
+    &__arrow {
+      font-size: 30px;
+    }
+  }
+}

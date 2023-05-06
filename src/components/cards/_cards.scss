@@ -47,5 +47,10 @@
   .cards {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+  }
+
+  .cards__card {
+    height: 255px;
   }
 }
