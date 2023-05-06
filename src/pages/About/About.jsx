@@ -1,5 +1,5 @@
 import Dropdown from "../../components/dropdown/Dropdown";
-import "./about.scss";
+import "./_about.scss";
 
 const About = () => {
   return (

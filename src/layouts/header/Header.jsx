@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
-import "./header.scss";
+import "./_header.scss";
 
 const Header = () => {
   return (
@@ -10,7 +10,12 @@ const Header = () => {
       </Link>
 
       <nav>
-        <NavLink exact to="/" activeClassName="active" className="navbar-link">
+        <NavLink
+          exact="true"
+          to="/"
+          activeClassName="active"
+          className="navbar-link"
+        >
           Acceuil
         </NavLink>
         <NavLink to="/about" activeClassName="active" className="navbar-link">

@@ -27,3 +27,37 @@
   text-align: center;
   @include whiteFont();
 }
+
+@media (max-width: 1450px) {
+  .banner {
+    width: 1000px;
+    height: 223px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .banner {
+    width: 700px;
+    height: 180px;
+    .banner-text {
+      font-size: 35px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .banner {
+    width: 335px;
+    height: 111px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    .banner-text {
+      font-size: 24px;
+      text-align: left;
+      margin-left: 16px;
+      width: 200px;
+      height: 48px;
+    }
+  }
+}

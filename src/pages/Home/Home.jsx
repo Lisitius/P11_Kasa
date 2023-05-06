@@ -1,6 +1,6 @@
 import Banner from "../../components/banner/Banner";
 import Cards from "../../components/cards/cards";
-import "./home.scss";
+import "./_home.scss";
 
 const Home = () => {
   return (
