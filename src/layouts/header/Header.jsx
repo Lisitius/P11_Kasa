@@ -13,12 +13,14 @@ const Header = () => {
         <NavLink
           exact="true"
           to="/"
-          activeClassName="active"
-          className="navbar-link"
+          className={({ isActive }) => (isActive ? "navbar-link" : "none")}
         >
           Acceuil
         </NavLink>
-        <NavLink to="/about" activeClassName="active" className="navbar-link">
+        <NavLink
+          to="/about"
+          className={({ isActive }) => (isActive ? "navbar-link" : "none")}
+        >
           A propos
         </NavLink>
       </nav>

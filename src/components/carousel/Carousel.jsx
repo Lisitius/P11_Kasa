@@ -29,6 +29,13 @@ const Carousel = ({ pictures }) => {
           alt="Carousel"
         />
         {pictures.length > 1 && (
+          <div className="carousel__index">
+            <span className="carousel__index-text">
+              {currentIndex + 1}/{pictures.length}
+            </span>
+          </div>
+        )}
+        {pictures.length > 1 && (
           <i
             className="fa-solid fa-chevron-right fa-6x carousel__arrow carousel__arrow--right"
             onClick={nextSlide}
