@@ -59,18 +59,17 @@
       display: flex;
       align-items: center;
       margin-bottom: 20px;
-      margin-left: auto;
     }
 
     p:first-child {
-      margin-right: 5px;
-      width: 64px;
-      text-align: center;
+      width: 80px;
+      text-align: right;
     }
     img {
       border-radius: 50%;
       width: 64px;
       height: 64px;
+      margin-left: 15px;
     }
 
     &-rate {

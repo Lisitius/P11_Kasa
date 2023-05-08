@@ -14,17 +14,13 @@ header {
       @include headerFont();
       text-decoration: none;
       position: relative;
+      text-decoration: underline;
+    }
 
-      &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -1px;
-        height: 0;
-        width: 100%;
-        background-color: $primary-color;
-        transition: height 0.3s;
-      }
+    .none {
+      @include headerFont();
+      text-decoration: none;
+      position: relative;
     }
   }
 }
@@ -56,7 +52,8 @@ header {
       height: 47px;
     }
     nav {
-      .navbar-link {
+      .navbar-link,
+      .none {
         font-size: 12px;
       }
     }

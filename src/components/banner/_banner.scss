@@ -1,7 +1,8 @@
 @import "../../sass/styles/mixins.scss";
 
 .banner {
-  width: 1640px;
+  width: 1440px;
+  max-width: 1440px;
   height: 223px;
   background-image: url("../../assets/home_banner.png");
   background-size: cover;
